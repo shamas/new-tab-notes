@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  textarea {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    background-color: #e6e6e6;
+    font-size: 32px;  /* Double the size */
+    font-family: 'Roboto', sans-serif;  /* Smoother aesthetic */
+      
+  }
+  
