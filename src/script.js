@@ -26,5 +26,28 @@ document.addEventListener("DOMContentLoaded", function() {
       };
       localStorage.setItem("newtabSize", JSON.stringify(size));
     });
+
+  // Load saved font size
+  var savedFontSize = localStorage.getItem("newtabFontSize");
+  if (savedFontSize) {
+    document.getElementById("notes").style.fontSize = savedFontSize + "px";
+  }
+
+  // Increase font size
+  document.getElementById("increase").addEventListener("click", function() {
+    var currentSize = parseFloat(window.getComputedStyle(document.getElementById("notes")).fontSize);
+    var newSize = currentSize * 1.1;
+    document.getElementById("notes").style.fontSize = newSize + "px";
+    localStorage.setItem("newtabFontSize", newSize);
   });
+
+  // Decrease font size
+  document.getElementById("decrease").addEventListener("click", function() {
+    var currentSize = parseFloat(window.getComputedStyle(document.getElementById("notes")).fontSize);
+    var newSize = currentSize / 1.1;
+    document.getElementById("notes").style.fontSize = newSize + "px";
+    localStorage.setItem("newtabFontSize", newSize);
+  });
+});
+
   
