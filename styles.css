@@ -8,10 +8,8 @@ body {
     height: 100vh;
   }
   textarea {
-    max-width: 400px;
-    max-height: 400px;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
@@ -19,6 +17,7 @@ body {
     background-color: #e6e6e6;
     font-size: 32px;  /* Double the size */
     font-family: 'Roboto', sans-serif;  /* Smoother aesthetic */
-      
+    resize: both;  /* Allow resizing */
+    overflow: auto;  /* Required for resizing */
   }
   
