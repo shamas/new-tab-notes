@@ -16,8 +16,7 @@ This is a simple Chrome extension that replaces the new tab page with a notepad.
 1. **Clone the Repository**
     
     ```bash
-    bashCopy code
-    git clone https://github.com/yourusername/new-tab-notes.git
+    git clone https://github.com/shamas/new-tab-notes.git
     
     ```
     
